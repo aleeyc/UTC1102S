@@ -10,7 +10,6 @@ import { useState, useEffect, useRef } from "react";
 
 const SCENE_IMGS = {
   prologue: "/img/prologue.png",
-  
   act1_house: "/img/act1_house.png",
   act1_street: "/img/act1_street.png",
   act1_store: "/img/act1_store.png",
@@ -24,7 +23,7 @@ const SCENE_IMGS = {
   act3_arrest: "/img/act3_arrest.png",
   act3_tower: "/img/act3_tower.png",
   act3_conference: "/img/act3_conference.png",
-  epilogue: "/img/epilogue.png",
+  epilogue: "/img/prologue.png", // "/img/epilogue.png",
   ending_e1: "/img/ending_e1.png",
   ending_e2: "/img/ending_e2.png",
 };

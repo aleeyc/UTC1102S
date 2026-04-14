@@ -349,7 +349,7 @@ const GAME = {
       N("People scatter. In the movement you are caught \u2014 a hand on your arm, a scanner at your temple.\n\nAn officer. You freeze."),
       D("Rookie Officer", "Your biometric ID is flagging a restricted category. You need to come with me."),
       N("You are placed in the back of a vehicle before you can ask what category. Twenty minutes of waiting, and another uniform walks up to you. His expression quickly morphs into one of surprise."),
-      D("Lead Officer", "I apologise. There's been a misidentification. Your biological profile registers as a protected executive contact. You should have cleared immediately. I'm sorry for the inconvenience."),
+      D("Lead Officer", "I apologise. There's been a misidentification. Your biological profile registers as a protected executive contact. You should have been cleared immediately. I'm sorry for the inconvenience."),
       D("You", "Whose contact?"),
       I("He avoids your gaze. He instructs the Rookie to give you a lift to 'Headquarters' as a means of apology. The hovercraft ascends into the sky."),
     ],
@@ -374,9 +374,9 @@ const GAME = {
     img: "act3_conference",
     chunks: [
       N("You stop walking when you see them.\n\nOne figure is older \u2014 mid-forties, the weary posture of someone who has the weight of the world on his shoulders. You study the face for a full ten seconds before it finally clicks. \n\nIt is your face. Older. But yours. You struggle to accept what lays before you."),
-      N("The other figure you recognise without any delay at all.\n\nEthan. \n\nThat vibrant, larger-than-life personality you know to be your brother's shines through the glass window, evident in his animated hand gestures. He is talking, pointing at the blueprint, and the older version of you is listening with the rapt attention."),
+      N("The other figure you recognise without any delay at all.\n\nEthan. \n\nThat vibrant, larger-than-life personality you know to be your brother's shines through the glass window, evident in his animated hand gestures. He is talking, pointing at the blueprint, and the older version of you is listening with rapt attention."),
       N("You press close to the glass. Your chip reads the room's audio and routes it through your auditory cortex. You listen."),
-      D("Ethan", "East Africa is at 97% penetration. Southeast Asia is the priority \u2014 The talks with Bangkok are scheduled for next month. Vietnam just greenlighted our infrastructural layout. If we move Q-chip into those markets in Q1, we're looking at 400 million new users before the end of the decade."),
+      D("Ethan", "East Africa is at 97% penetration. Southeast Asia is the priority \u2014 The talks with Bangkok are scheduled for next month. Vietnam just greenlighted our infrastructure layout. If we move Q-chip into those markets in Q1, we're looking at 400 million new users before the end of the decade."),
       D("Older You", "I want the safety review on the new encoding protocol finished before we scale. The profile accuracy issues from 2040 cannot repeat."),
       D("Ethan", "The 2040 data is what makes the case. Eleven thousand survivors. The UN built policy around what we built. The Red Cross closed because what we made worked better. That matters."),
       D("Older You", "I know it matters. This is why we built this company. To help people, to save lives."),
@@ -392,9 +392,9 @@ const GAME = {
   epilogue: {
     img: "epilogue",
     chunks: [
-      N("You sit in the dark.\n\nThe chip at your temple is dead. No overlay, no data, no connection. Just metal and the memories of what you saw. The ring is in two pieces on the floor.\n\nFrom above: Ethan's voice."),
-      I('"Hey \u2014 are you okay down there? I\'ve been calling you."'),
-      N("You look up through the hole. His face, peering down. Twenty-two years old. Your brother.\n\nIn your mind: the conference room. The original Q-chip blueprint \u2014 your design, annotated and refined and ready to be scaled to 400 million people. Ethan's voice: trust what we've done together.\n\nAnd Mrs Otieno. Day four. The relief tent. Six hours later.\n\nAnd the older version of yourself, nodding."),
+      N("You sit in the dark.\n\nThe chip at your temple is dead. No overlay, no data, no connection. Just metal and the memories of what you saw. The ring is cracked in two pieces on the floor.\n\nFrom above: Ethan's voice."),
+      I('"Hey \u2014 are you okay down there? I\'ve been looking for you."'),
+      N("You look up through the hole. His face, peering down. Twenty-two years old. Your brother.\n\nIn your mind: the conference room. The original Q-chip blueprint \u2014 your design, annotated and refined and ready to be scaled to 400 million people. Ethan's voice: trust what we've done together.\n\nThe harrowing words of the man on the crate.\n\nAnd the older version of yourself, nodding."),
       N("MAKE YOUR FINAL CHOICE:")
     ],
     choices: [
@@ -406,10 +406,10 @@ const GAME = {
   ending_e1: {
     img: "ending_e1",
     chunks: [
-      N("You press the chip hard against the concrete until it cracks. Then again until the pieces are too small to matter. You leave them in the dark with the two halves of the ring.\n\nYou climb up. Ethan grabs your arm and pulls you through."),
+      N("You press the chip hard against the concrete until it cracks. Then again, and again until the pieces are too small to matter. You leave them in the dark with the two halves of the ring.\n\nYou climb up. Ethan grabs your arm and pulls you through."),
       D("Ethan", "Find anything down there?"),
       D("You", "Nothing. Just a hole in the floor."),
-      I("You never speak of it.\nYou destroy your prototype papers in the fireplace.\nYou will never come to see the future you envisioned.\nNeither will anyone else."),
+      I("You never speak of it.\nYou destroy your prototype.\nYou will never come to see the future you envisioned.\nNeither will anyone else."),
       S("END.")
     ],
     next: null,
@@ -425,7 +425,7 @@ const GAME = {
       D("Ethan", "Where did you get this?"),
       D("You", "From the future."),
       I("He laughs. Then he looks at the chip. Really looks at it."),
-      N("You see Ethan in the near future, hunched over a desk late at night, perusing your papers. The beginnings of something big."),
+      N("You see Ethan in the near future, hunched over a desk late at night, perusing your papers. The beginning of something big."),
       I("You saw what you would do.\nYou saw what the world would become.\nYou hope the two of you build a bright future."),
       S("END.")
     ],

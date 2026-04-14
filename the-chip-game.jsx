@@ -346,7 +346,7 @@ const GAME = {
       D("Man on crate", "They will tell you this is about data quality. They will tell you the algorithm is improving. They will show you the eleven thousand\u2014"),
       D("Lead Officer", "This is your final warning. Disperse immediately or face detainment."),
       N("The crowd begins to fracture \u2014 some leaving quickly, heads down, others holding their ground. The officers move in, fast and practised. The man on the crate is reached first: one officer grabs his arm, another takes the megaphone. He does not resist, but he keeps talking until the megaphone is gone, and then his voice carries without it, smaller, swallowed by the plaza."),
-      N("People scatter. In the movement you are caught \u2014 a hand on your arm, a scanner at your temple.\n\nAn officer. A pause."),
+      N("People scatter. In the movement you are caught \u2014 a hand on your arm, a scanner at your temple.\n\nAn officer. You freeze."),
       D("Rookie Officer", "Your biometric ID is flagging a restricted category. You need to come with me."),
       N("You are placed in the back of a vehicle before you can ask what category. Twenty minutes of waiting, and another uniform walks up to you. His expression quickly morphs into one of surprise."),
       D("Lead Officer", "I apologise. There's been a misidentification. Your biological profile registers as a protected executive contact. You should have cleared immediately. I'm sorry for the inconvenience."),

@@ -46,8 +46,8 @@ const GAME = {
   prologue: {
     img: "prologue",
     chunks: [
-      N("You are a scientist, born and raised in Nairobi, Kenya. For the past two years you have been working on your most ambitious project: a compact wearable chip designed to interface directly with the human nervous system \u2014 bypassing screens entirely, feeding information straight to the senses. You believe it is the future of human-computer interaction. Your prototype sits in your lab, half-finished, waiting for you to return.\n\nToday is not a lab day."),
-      N("Your grandfather passed three days ago. You and your brother Ethan are here to sort through his belongings. This was the very house you grew up in.\n\nEthan is in the living room, rifling through old furniture, occasionally calling out to you about things he finds. You are in the study, boxing books, when the floor shifts beneath your weight \u2014 a soft groan of old timber \u2014 and then gives way entirely.\n\nNot a crash. Just a collapse. And then darkness."),
+      N("You are a scientist, born and raised in Nairobi, Kenya. For the past two years you have been working on your most ambitious project: a compact wearable chip designed to interface directly with the human nervous system \u2014 bypassing screens entirely, feeding information straight to the senses. You believe it is the future of human interaction. Your prototype sits in your lab, half-finished, waiting for you to return.\n\nToday is not a lab day."),
+      N("Your grandfather passed three days ago. You and your brother Ethan are here to sort through his belongings. They remain here, in the very house you grew up in.\n\nEthan is in the living room, rifling through old furniture, occasionally calling out to you about things he finds. You are in the study, boxing books, when the floor shifts beneath your weight \u2014 a soft groan of old timber \u2014 and then gives way entirely.\n\nNot a crash. Just a collapse. And then darkness."),
       N("You land hard on concrete in a room that has no right to exist. Small, dry, no windows. Dust everywhere. And on the floor, half-buried in grit: a ring. Not decorative \u2014 functional, dense, covered in tiny markings you don't recognise. The metal is dark and unusually warm. It hums at a frequency you feel in your back teeth.\n\nThe surface shifts between warm and cold in patches, like it's breathing."),
       N("From above, muffled: Ethan's voice, calling your name. He didn't see you fall. You hear him moving through the next room, getting quieter, not closer.\n\nYou look at the ring.\n\nYou pick it up and slide it onto your finger.\n\nThe warmth spikes \u2014 and everything goes white."),
     ],
@@ -57,7 +57,7 @@ const GAME = {
   act1_house: {
     img: "act1_house",
     chunks: [
-      S("DATE: 21 MARCH 2040. TIME: 16:07. LOCATION: WESTLANDS DISTRICT, NAIROBI."),
+      S("DATE: 12 MARCH 2040. TIME: 16:07. LOCATION: WESTLANDS DISTRICT, NAIROBI."),
       N("You move through the house quickly. The furniture is different. The bookshelves are gone. Through the windows the skyline is unrecognisable \u2014 towers where there were none, signage drifting in the air above the street.\n\nYou go outside."),
     ],
     next: "act1_street",
@@ -68,8 +68,8 @@ const GAME = {
     chunks: [
       
       N("The city is enormous. The city you knew is gone and this one has grown up in its place with a confidence that makes the past feel like a rough draft.\n\nAnd then there is the tower.\n\nIt rises at the northern end of the street \u2014 taller than everything around it by a margin that makes everything else look provisional. Its facade is mirrored glass that catches the Nairobi sun and throws it across the city in long white bands. At its peak: a Q, glowing blue, slow-pulsing. Visible from everywhere. You stare at it longer than you mean to."),
-      N("You start walking toward it. It is the kind of thing you walk toward without deciding to.\n\nThe street flows around you. Matatus, sleek and silent, move in coordinated columns. Vendors operate from modular carts, their menus projected above them in soft light, payment happening with a glance. Children run past, every one with a silver disc at their temple. The Q catches the light on each of them like a small repeated signal."),
-      N("Halfway down the block you stop.\n\nIn the window of a storefront \u2014 clean glass, white interior, a single object displayed under a precise beam of light \u2014 is a chip. Small, silver, temple-mounted. And the design is familiar. The curvature of the casing, the arrangement of the contact points, the thickness of the disc.\n\nIt looks like your prototype. Finished.\n\nYou go inside."),
+      N("You start walking toward it. It is the kind of thing you walk toward without deciding to.\n\nThe street flows around you. Matatus, sleek and silent, move in coordinated columns. Vendors operate from modular carts, their menus projected above them in soft light, payment happening with a glance. Children run past, every one with a metallic shard at their temple. The Q catches the light on each of them like a small repeated signal."),
+      N("Halfway down the block you stop.\n\nIn the window of a storefront \u2014 clean glass, white interior, a single object displayed under a precise beam of light \u2014 is a chip. Small, silver, temple-mounted. And the design is familiar. The curvature of the casing, the arrangement of the contact points, the thickness of the chip.\n\nIt looks like your prototype. Finished.\n\nYou go inside."),
     ],
     next: "act1_store",
   },
@@ -83,7 +83,7 @@ const GAME = {
       D("Q-SA4", "The Q-chip. Our flagship product. Complimentary for residents under the National Digital Equity Programme, or available for purchase. May I?"),
       I("It lifts one from the display table and holds it out. You take it."),
       N("You turn it over. As a scientist who has spent two years designing something remarkably similar, you know exactly what you're looking at. The contact points. The neural interface layer. The form factor is more refined than your prototype \u2014 thinner, the edges cleaner. But the architecture underneath is unmistakably close to what you've been building."),
-      D("You", "How does it work? Actually work, not the marketing version."),
+      D("You", "How does it work?"),
       D("Q-SA4", "It interfaces directly with the visual and auditory cortex. Once adhered to the temple, the chip reads and writes to those sensory pathways. You don't see a display \u2014 you see with augmented perception. Information becomes part of what your eyes and ears are already processing. No lag. No hardware between the signal and your experience of it."),
       N("Without thinking \u2014 the reflex of a scientist who tests things before theorising about them \u2014 you press it to your temple.\n\nIt adheres instantly. A soft chime, felt rather than heard, resonates behind your eyes."),
       D("Q-SA4", "Navigation is thought-responsive. The system reads micro-electrical signals from your prefrontal cortex. You don't tap. You intend."),
@@ -95,7 +95,7 @@ const GAME = {
       D("You", "And Qoogle has access to that profile."),
       D("Q-SA4", "Qoogle operates the infrastructure, yes. Data use is governed by the terms of the National Partnership Agreement and the relevant privacy frameworks."),
       I("It says this with the same tone it uses for everything. Warm, even, entirely untroubled."),
-      N("You think about your prototype on the lab bench in 2026. The half-finished thing you've been coaxing toward existence for two years. What you have built is a rough sketch. This is the finished painting, mass-produced, government-issued, on the temples of every person you passed on the street outside.\n\nYou step out of the store into the afternoon."),
+      N("You think about your prototype on the lab bench in 2026. The half-finished thing you've been coaxing toward existence for two years. What you have built is a rough sketch. This is the finished painting, mass-produced, government-issued, on the temples of every person you passed on the street outside.\n\nYou step out of the store into the sunny afternoon."),
     ],
     next: "choice1",
   },
@@ -147,7 +147,7 @@ const GAME = {
       N("Then you see the kiosk.\n\nIt stands at the intersection like a modern lamppost \u2014 slender, about two metres tall, its pole a dark brushed metal that tapers upward into a wider head. From that head, a full holographic display projects outward in a slow rotating arc: a newspaper front page rendered in three dimensions, headlines floating at chest height, images suspended in the air beside them like framed photographs that exist without a frame.\n\nAround the base of the kiosk: a shallow curved bench, designed to invite you to stop.\n\nYour chip pings: DAILY BRIEFING \u2014 12 MARCH 2040."),
       A("Qoogle's QoreOS: Connecting the Unconnected", "Today Qoogle marks a milestone in the global mission to end the digital divide. QoreOS \u2014 our proprietary chip operating system \u2014 enables full connectivity on hardware costing under three dollars to manufacture. The Q-chip delivers healthcare access, civic participation, financial services, and real-time communication to communities that have been left behind by legacy technology models.\n\nIn our first year of partnership with the Kenyan government, mobile banking access rose from 66% to 94% of registered adults. Rural clinic appointment throughput increased by 340%. School enrolment in chip-registered households is up 28%.\n\nTwo billion people worldwide remain unconnected. With QoreOS, that number will fall. This is not disruption. This is equity."),
       N("You scroll further. More articles stack below the headline.\n\nA profile of James Luo \u2014 Qoogle's Head of Global Equity Initiatives \u2014 photographed outside a school in the Rift Valley, surrounded by children in uniforms. Each child has a chip at their temple. The caption: Building the infrastructure of the next generation.\n\nA data visualisation: a map of Africa, chip adoption rates shading each country from pale to deep blue as the numbers climb. Kenya is the deepest blue on the continent."),
-      N("You step back from the kiosk. The holographic images continue their slow rotation in the air beside it \u2014 faces, numbers, maps, the language of progress, suspended in afternoon light.\n\nThe Q tower pulses at the end of the street. Its blue is steady and slow. The colour of certainty."),
+      N("You step back from the kiosk. The holographic images continue their slow rotation in the air beside it \u2014 faces, numbers, maps, suspended in afternoon light.\n\nThe Q tower pulses at the end of the street. Its blue is steady and slow. The colour of certainty."),
     ],
     next: "interlude_b",
   },
@@ -200,8 +200,8 @@ const GAME = {
     img: "act2_arrival",
     chunks: [
       S("DATE: 14 NOVEMBER 2040. TIME: 10:07. LOCATION: WESTLANDS DISTRICT, NAIROBI."),
-      N("People are moving differently here. Purposeful in the way people are when they are holding something together by the effort of moving at all. Some wear Red Qross vests, the logo crisp and recent, moving in coordinated pairs. A group of men unload supply crates from a vehicle with practised efficiency. A woman sits on the kerb with her head in her hands. Someone sits beside her and says nothing, just stays."),
-      N("The Q tower is still there to the north \u2014 the same tower you saw an hour ago, in a year that no longer exists. Its upper floors have grown: a new section, gleaming above the original structure, the blue Q at its peak brighter and slower in its pulse. Like it has grown more certain of itself."),
+      N("People are moving differently here. Purposeful in the way people are when they are holding something together by the effort of moving at all. Some wear neon vests, emblazoned with a Q logo - the same one on the tower, moving in coordinated pairs. A group of men unload supply crates from a vehicle with practised efficiency. A woman sits on the kerb with her head in her hands. Someone sits beside her and says nothing, just stays."),
+      N("The Q tower is still there to the north \u2014 in the same place it was minutes ago. Though apparently eight months have passed. Its upper floors have grown: a new section, gleaming above the original structure, the blue Q at its peak brighter and slower in its pulse. Like it has grown more certain of itself."),
       N("Something happened here. The details are not yet clear. But the city is wearing the evidence in its cracked pavements and careful faces, and the air has the quality of a place that is trying to return to normal without being entirely sure what normal was."),
     ],
     next: "choice2_b",

@@ -427,7 +427,7 @@ const GAME = {
       D("You", "From the future."),
       I("He laughs. Then he looks at the chip. Really looks at it."),
       N("You see Ethan in the near future, hunched over a desk late at night, perusing your papers. The beginning of something big."),
-      I("You saw what you would do.\nYou saw what the world would become.\nYou hope the two of you build a bright future."),
+      I("You saw what you would do.\nYou saw what the world would become.\nYou hope the two of you build a bright future anyway."),
       S("END.")
     ],
     next: null,

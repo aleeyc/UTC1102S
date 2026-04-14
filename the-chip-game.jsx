@@ -46,8 +46,8 @@ const GAME = {
   prologue: {
     img: "prologue",
     chunks: [
-      N("Your grandfather passed three days ago. You and your brother Ethan are here to sort through his belongings. Your mother couldn't face it yet.\n\nYou are a scientist. For the past two years you have been working on your most ambitious project: a compact wearable chip designed to interface directly with the human nervous system \u2014 bypassing screens entirely, feeding information straight to the senses. You believe it is the future of human-computer interaction. Your prototype sits in your lab, half-finished, waiting for you to return.\n\nToday is not a lab day."),
-      N("Ethan is in the next room, rifling through old furniture, occasionally calling out to you about things he finds. You are in the study, boxing books, when the floor shifts beneath your weight \u2014 a soft groan of old timber \u2014 and then gives way entirely.\n\nNot a crash. Just a collapse. And then darkness."),
+      N("You are a scientist, born and raised in Nairobi, Kenya. For the past two years you have been working on your most ambitious project: a compact wearable chip designed to interface directly with the human nervous system \u2014 bypassing screens entirely, feeding information straight to the senses. You believe it is the future of human-computer interaction. Your prototype sits in your lab, half-finished, waiting for you to return.\n\nToday is not a lab day."),
+      N("Your grandfather passed three days ago. You and your brother Ethan are here to sort through his belongings. This was the very house you grew up in.\n\nEthan is in the living room, rifling through old furniture, occasionally calling out to you about things he finds. You are in the study, boxing books, when the floor shifts beneath your weight \u2014 a soft groan of old timber \u2014 and then gives way entirely.\n\nNot a crash. Just a collapse. And then darkness."),
       N("You land hard on concrete in a room that has no right to exist. Small, dry, no windows. Dust everywhere. And on the floor, half-buried in grit: a ring. Not decorative \u2014 functional, dense, covered in tiny markings you don't recognise. The metal is dark and unusually warm. It hums at a frequency you feel in your back teeth.\n\nThe surface shifts between warm and cold in patches, like it's breathing."),
       N("From above, muffled: Ethan's voice, calling your name. He didn't see you fall. You hear him moving through the next room, getting quieter, not closer.\n\nYou look at the ring.\n\nYou pick it up and slide it onto your finger.\n\nThe warmth spikes \u2014 and everything goes white."),
     ],
@@ -57,6 +57,7 @@ const GAME = {
   act1_house: {
     img: "act1_house",
     chunks: [
+      S("DATE: 21 MARCH 2040. TIME: 16:07. LOCATION: WESTLANDS DISTRICT, NAIROBI."),
       N("You move through the house quickly. The furniture is different. The bookshelves are gone. Through the windows the skyline is unrecognisable \u2014 towers where there were none, signage drifting in the air above the street.\n\nYou go outside."),
     ],
     next: "act1_street",
@@ -65,6 +66,7 @@ const GAME = {
   act1_street: {
     img: "act1_street",
     chunks: [
+      
       N("The city is enormous. The city you knew is gone and this one has grown up in its place with a confidence that makes the past feel like a rough draft.\n\nAnd then there is the tower.\n\nIt rises at the northern end of the street \u2014 taller than everything around it by a margin that makes everything else look provisional. Its facade is mirrored glass that catches the Nairobi sun and throws it across the city in long white bands. At its peak: a Q, glowing blue, slow-pulsing. Visible from everywhere. You stare at it longer than you mean to."),
       N("You start walking toward it. It is the kind of thing you walk toward without deciding to.\n\nThe street flows around you. Matatus, sleek and silent, move in coordinated columns. Vendors operate from modular carts, their menus projected above them in soft light, payment happening with a glance. Children run past, every one with a silver disc at their temple. The Q catches the light on each of them like a small repeated signal."),
       N("Halfway down the block you stop.\n\nIn the window of a storefront \u2014 clean glass, white interior, a single object displayed under a precise beam of light \u2014 is a chip. Small, silver, temple-mounted. And the design is familiar. The curvature of the casing, the arrangement of the contact points, the thickness of the disc.\n\nIt looks like your prototype. Finished.\n\nYou go inside."),
@@ -164,8 +166,8 @@ const GAME = {
     img: "act2_arrival",
     chunks: [
       S("DATE: 14 NOVEMBER 2040. TIME: 10:07. LOCATION: WESTLANDS DISTRICT, NAIROBI."),
-      N("People are moving differently here. Purposeful in the way people are when they are holding something together by the effort of moving at all. Some wear Red Qross vests, the logo crisp and recent, moving in coordinated pairs. A group of men unload supply crates from a vehicle with practised efficiency. A woman sits on the kerb with her head in her hands. Someone sits beside her and says nothing, just stays."),
-      N("The Q tower is still there to the north \u2014 the same tower you saw an hour ago, in a year that no longer exists. Its upper floors have grown: a new section, gleaming above the original structure, the blue Q at its peak brighter and slower in its pulse. Like it has grown more certain of itself."),
+      N("People are moving differently here. Purposeful in the way people are when they are holding something together by the effort of moving at all. Some wear neon vests, with a logo bearing resemblance to that Q you saw on that skyscraper, moving in coordinated pairs. A group of men unload supply crates from a vehicle with practised efficiency. A woman sits on the kerb with her head in her hands. Someone sits beside her and says nothing, just stays."),
+      N("The Q tower is still there to the north \u2014 the same tower from a few months ago, though for you it was mere minutes. Its upper floors have grown: a new section, gleaming above the original structure, the blue Q at its peak brighter and slower in its pulse. Like it has grown more certain of itself."),
       N("Something happened here. The details are not yet clear. But the city is wearing the evidence in its cracked pavements and careful faces, and the air has the quality of a place that is trying to return to normal without being entirely sure what normal was."),
     ],
     next: "choice2",
@@ -250,9 +252,9 @@ const GAME = {
     chunks: [
       D("ARIA-3", "Rural recovery has proceeded at a different pace. Chip penetration outside the city remains lower \u2014 current estimates place rural adoption at approximately 61%. Lower data density in those areas has affected the precision and speed of resource allocation during the response."),
       D("You", "So fewer chips meant slower rescue?"),
-      D("ARIA-3", "Resource allocation follows data availability. A richer data profile enables more accurate categorisation of a person's location and condition. In areas where chip data is sparse, that categorisation is less precise, which affects response speed and prioritisation."),
+      D("ARIA-3", "False. Resource allocation follows data availability. A richer data profile enables more accurate categorisation of a person's location and condition. In areas where chip data is sparse, that categorisation is less precise, which affects response speed and prioritisation."),
       D("You", "So the people who needed help most got it last."),
-      D("ARIA-3", "I wouldn't characterise it that way. All affected areas received support. Response timelines varied by operational complexity and data environment."),
+      D("ARIA-3", "Inaccurate. All affected areas received support. Response timelines varied by operational complexity and data environment."),
       I("She holds your gaze. Her pale gold eyes do not waver. She is not lying. She is describing a system from inside it, using the only language the system gave her."),
     ],
     next: "act2a_converge",
@@ -261,7 +263,7 @@ const GAME = {
   act2a_converge: {
     img: "act2_arrival",
     chunks: [
-      N("You are about to press her further when you feel it \u2014 rising through the soles of your feet before your ears register it. A low roll. A tremor. Not violent, but unmistakable: the ground remembering."),
+      N("You are about to press her further when you feel it \u2014 rising through the soles of your feet before your ears register it. A low roll. A tremor. You try to quell the rising panic."),
       S("SEISMIC ACTIVITY DETECTED. MINOR TREMOR. REMAIN CALM."),
       N("ARIA-3 pauses mid-sentence, recalibrating. The supply crates across the plaza rattle and shift.\n\nYou step back. Your hand moves to the ring on your finger."),
     ],
@@ -276,8 +278,9 @@ const GAME = {
       I("She studies you. Then she lets it go, the way a person does when the explanation would take longer than she has energy for."),
       D("Zara", "You want to know what actually happened?"),
       D("You", "Yeah."),
+      D("Zara", "That same day I saw you, an earthquake struck the whole of Nairobi. \u2014 It was devastating. Many people I knew lost their lives. \u2014 Qoogle swept in with their new disaster relief branch, the Red Qross."),
       D("Zara", "My neighbour, Mrs Otieno, she was 73. Had a chip \u2014 got it in the first government wave, was a good citizen, did everything right. But her data was lacking. Health signals not fully logged. Location patterns sparse. Economic activity minimal because she was retired."),
-      D("Zara", "To TRIAGE-1, she was a low-confidence profile. The system couldn't categorise her well \u2014 not enough data to build a clear picture of where she was or how she was doing. Low-confidence profiles get deprioritised. The system goes to the people it knows better first."),
+      D("Zara", "To Qoogle's algorithm, she was a low-confidence profile. The system couldn't categorise her well \u2014 not enough data to build a clear picture of where she was or how she was doing. Low-confidence profiles get deprioritised. The system goes to the people it knows better first."),
       D("Zara", "Red Qross still came to her building. But they skipped her unit until the fourth day. She was alive when they found her."),
       D("Zara", "She died in the relief tent six hours later."),
       D("Zara", "She had the chip. She followed every instruction. The system just didn't have enough of her to find her properly. And it trusted its own data more than it would have trusted anyone standing there saying: she is real, she is here."),
@@ -313,7 +316,7 @@ const GAME = {
     img: "act2_arrival",
     chunks: [
       N("She is still talking when the ground moves. Not a gentle tremor \u2014 a proper shake, several seconds, long enough to rattle windows and pull people's hands toward walls and each other. Zara stops mid-sentence. Both of you wait, braced, until it passes."),
-      D("Zara", "Find somewhere stable."),
+      D("Zara", "Another aftershock. RUN!"),
       N("You look at the ring on your finger. You press the warm nodes again \u2014 the same sequence, then further along the pattern into new territory. The ring grows hot against your skin. The world softens. The date in your overlay stutters.\n\n2045."),
     ],
     next: "act3_plaza",
@@ -322,7 +325,8 @@ const GAME = {
   act3_plaza: {
     img: "act3_plaza",
     chunks: [
-      N("He is an ex-Red Qross field operator. You piece this together from what he is saying. He has a megaphone and the voice of someone who has rehearsed this speech in private for a long time before deciding to say it out loud."),
+      S("DATE: 22 JUNE 2045. TIME: 19:26. LOCATION: CENTRAL PLAZA, NAIROBI."),
+      N("He is an ex-Red Qross field operator. You piece this together from his loud proclamations. He has a megaphone and the voice of someone who has seen things. A harrowed fear marks his tone."),
       D("Man on crate", "I worked fourteen months as a field operator for Red Qross. I carried the equipment. I followed the map. I pulled people from rubble. And I am standing here because I cannot keep what I know inside the building where they want it to stay."),
       D("Man on crate", "TRIAGE-1 works on a principle that sounds reasonable until you see what it does. The more data your chip has generated, the better the system can categorise you. Better categorisation means more accurate location data. More accurate health estimation. Higher confidence in your survival status. Higher priority in the rescue queue. This sounds like precision. It is. It is also something else."),
       D("Man on crate", "The people with the richest chip profiles are the people who have had their chips the longest, who use them the most, whose lives are fully legible to the system. Urban. Economically active. Young. Healthy enough to be generating signals."),
@@ -336,17 +340,18 @@ const GAME = {
   act3_arrest: {
     img: "act3_arrest",
     chunks: [
+      N("Suddenly, a wave of uniformed personnel sweep through the square. Sirens blare."),
       D("Lead Officer", "This gathering has not been registered under the Public Assembly Ordinance. You are in violation of Section 14. You have two minutes to disperse."),
       N("No one moves. The man on the crate keeps talking."),
       D("Man on crate", "They will tell you this is about data quality. They will tell you the algorithm is improving. They will show you the eleven thousand\u2014"),
       D("Lead Officer", "This is your final warning. Disperse immediately or face detainment."),
       N("The crowd begins to fracture \u2014 some leaving quickly, heads down, others holding their ground. The officers move in, fast and practised. The man on the crate is reached first: one officer grabs his arm, another takes the megaphone. He does not resist, but he keeps talking until the megaphone is gone, and then his voice carries without it, smaller, swallowed by the plaza."),
       N("People scatter. In the movement you are caught \u2014 a hand on your arm, a scanner at your temple.\n\nAn officer. A pause."),
-      D("Officer", "Your biometric ID is flagging a restricted category. You need to come with me."),
-      N("You are placed in the back of a vehicle before you can ask what category. Twenty minutes later, a deeper scan. The officer's expression changes."),
-      D("Officer", "I apologise. There's been a misidentification. Your biological profile registers as a protected executive contact. You should have cleared immediately. I'm sorry for the inconvenience."),
+      D("Rookie Officer", "Your biometric ID is flagging a restricted category. You need to come with me."),
+      N("You are placed in the back of a vehicle before you can ask what category. Twenty minutes of waiting, and another uniform walks up to you. His expression quickly morphs into one of surprise."),
+      D("Lead Officer", "I apologise. There's been a misidentification. Your biological profile registers as a protected executive contact. You should have cleared immediately. I'm sorry for the inconvenience."),
       D("You", "Whose contact?"),
-      I("He doesn't answer directly. He offers you a ride in his hovercraft instead."),
+      I("He avoids your gaze. He instructs the Rookie to give you a lift to 'Headquarters' as a means of apology. The hovercraft ascends into the sky."),
     ],
     next: "act3_tower",
   },
@@ -354,12 +359,12 @@ const GAME = {
   act3_tower: {
     img: "act3_tower",
     chunks: [
-      N("The lobby is enormous. Marble floors. A waterfall built into the north wall, water falling in a continuous curtain behind an engraved Q. Suspended above the atrium: a Q in pale blue light, rotating slowly. The entire eastern wall is live data \u2014 chip adoption rates by region, active Red Qross deployments, infrastructure uptime, the numbers updating in real time. The scale of it is difficult to hold in your mind at once."),
+      N("The lobby is enormous. Marble floors. A waterfall built into the north wall, water falling in a continuous curtain behind an engraved Q. Suspended above the atrium: a Q in pale blue light, rotating slowly. The entire eastern wall is live data \u2014 chip adoption rates by region, active Red Qross deployments, infrastructure uptime, the numbers updating in real time. The scale of it is difficult to hold in your mind at once. \u2014 You see large headlines framed on the wall. Eager, you get a closer look."),
       A("QOOGLE TOWER — LOBBY WALL", "QOOGLE SAVES 11,000 LIVES IN 2040 EARTHQUAKE\nQOREOS NOW POWERS PUBLIC SERVICES OF 12 NATIONS\nUN DECLARES Q-CHIP AN ESSENTIAL GOOD \u2014 2044\nRED QROSS: THE NEW STANDARD IN HUMANITARIAN RESPONSE", "poster"),
-      N("A receptionist looks up. Looks at you. Looks again."),
-      D("Receptionist", "Sir \u2014 your biometrics are clearing executive access. But your chip is reading as first-generation 2040 issue, and your profile is flagging an age anomaly. You appear significantly younger than the records indicate."),
-      D("You", "Long story."),
-      D("Receptionist", "Of course. Please go ahead."),
+      N("An attendant sees you and rushes over. Looks at you. Looks again."),
+      D("Attendant", "Sir \u2014 your biometrics are clearing executive access. But your chip is reading as first-generation 2040 issue, and your profile is flagging an age anomaly. You appear significantly younger than the records indicate."),
+      D("You", "Long story. I have a meeting with my... contact."),
+      D("Attendant", "Of course. Please go ahead."),
       N("Every security gate opens before you reach it. Your face, your iris, your biometric signature \u2014 clearing without question, a ghost the building already knows. People in the corridors glance and look again, whispering. You catch the word younger twice.\n\nThe lift takes you to the top floor without being asked."),
     ],
     next: "act3_conference",
@@ -368,13 +373,13 @@ const GAME = {
   act3_conference: {
     img: "act3_conference",
     chunks: [
-      N("You stop walking when you see them.\n\nOne figure is older \u2014 mid-forties, the posture of someone who has been the most important person in every room for years. You study the face for a full ten seconds before your mind finishes the sentence it has been slowly building.\n\nIt is your face. Older. But yours."),
-      N("The other figure you recognise without any delay at all.\n\nEthan. Older, sharper, the restless energy of the twenty-two-year-old you left in that house compressed into something more controlled. He is talking, pointing at the blueprint, and the older version of you is listening with the focused attention of someone who trusts the speaker completely."),
+      N("You stop walking when you see them.\n\nOne figure is older \u2014 mid-forties, the weary posture of someone who has the weight of the world on his shoulders. You study the face for a full ten seconds before it finally clicks. \n\nIt is your face. Older. But yours. You struggle to accept what lays before you."),
+      N("The other figure you recognise without any delay at all.\n\nEthan. \n\nThat vibrant, larger-than-life personality you know to be your brother's shines through the glass window, evident in his animated hand gestures. He is talking, pointing at the blueprint, and the older version of you is listening with the rapt attention."),
       N("You press close to the glass. Your chip reads the room's audio and routes it through your auditory cortex. You listen."),
-      D("Ethan", "East Africa is at 97% penetration. Southeast Asia is the priority \u2014 Indonesia, Vietnam, the Philippines. Infrastructure deals are in place. If we move Q-chip into those markets in Q1, we're looking at 400 million new users before the end of the decade."),
+      D("Ethan", "East Africa is at 97% penetration. Southeast Asia is the priority \u2014 The talks with Bangkok are scheduled for next month. Vietnam just greenlighted our infrastructural layout. If we move Q-chip into those markets in Q1, we're looking at 400 million new users before the end of the decade."),
       D("Older You", "I want the safety review on the new encoding protocol finished before we scale. The profile accuracy issues from 2040 cannot repeat."),
       D("Ethan", "The 2040 data is what makes the case. Eleven thousand survivors. The UN built policy around what we built. The Red Cross closed because what we made worked better. That matters."),
-      D("Older You", "I know it matters. I was the one who built it."),
+      D("Older You", "I know it matters. This is why we built this company. To help people, to save lives."),
       D("Ethan", "Then trust it. Trust what we've done together."),
       I("A pause. The blueprint rotates between them \u2014 the Q-chip, the original, annotated with next-generation encoding improvements. Your chip reads the label: Q-CHIP: ENCODING PROTOCOL V2. SOUTHEAST ASIA DEPLOYMENT DRAFT."),
       D("Older You", "Alright. Q1 launch. But the safety review is non-negotiable."),
@@ -390,6 +395,7 @@ const GAME = {
       N("You sit in the dark.\n\nThe chip at your temple is dead. No overlay, no data, no connection. Just metal and the memories of what you saw. The ring is in two pieces on the floor.\n\nFrom above: Ethan's voice."),
       I('"Hey \u2014 are you okay down there? I\'ve been calling you."'),
       N("You look up through the hole. His face, peering down. Twenty-two years old. Your brother.\n\nIn your mind: the conference room. The original Q-chip blueprint \u2014 your design, annotated and refined and ready to be scaled to 400 million people. Ethan's voice: trust what we've done together.\n\nAnd Mrs Otieno. Day four. The relief tent. Six hours later.\n\nAnd the older version of yourself, nodding."),
+      N("MAKE YOUR FINAL CHOICE:")
     ],
     choices: [
       { label: "Destroy the chip. Never speak a word of this. Let the research die here.", next: "ending_e1" },
@@ -404,6 +410,7 @@ const GAME = {
       D("Ethan", "Find anything down there?"),
       D("You", "Nothing. Just a hole in the floor."),
       I("You never speak of it.\nYou destroy your prototype papers in the fireplace.\nYou will never come to see the future you envisioned.\nNeither will anyone else."),
+      S("END.")
     ],
     next: null,
   },
@@ -418,7 +425,9 @@ const GAME = {
       D("Ethan", "Where did you get this?"),
       D("You", "From the future."),
       I("He laughs. Then he looks at the chip. Really looks at it."),
-      I("You saw what you would do.\nYou saw what he would build.\nYou gave it to him anyway."),
+      N("You see Ethan in the near future, hunched over a desk late at night, perusing your papers. The beginnings of something big."),
+      I("You saw what you would do.\nYou saw what the world would become.\nYou hope the two of you build a bright future."),
+      S("END.")
     ],
     next: null,
   },

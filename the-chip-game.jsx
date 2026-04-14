@@ -46,6 +46,7 @@ const GAME = {
   prologue: {
     img: "prologue",
     chunks: [
+      S("DATE: 15 APRIL 2026. TIME: 14:08. LOCATION: WESTLANDS DISTRICT, NAIROBI."),
       N("You are a scientist, born and raised in Nairobi, Kenya. For the past two years you have been working on your most ambitious project: a compact wearable chip designed to interface directly with the human nervous system \u2014 bypassing screens entirely, feeding information straight to the senses. You believe it is the future of human interaction. Your prototype sits in your lab, half-finished, waiting for you to return.\n\nToday is not a lab day."),
       N("Your grandfather passed three days ago. You and your brother Ethan are here to sort through his belongings. They remain here, in the very house you grew up in.\n\nEthan is in the living room, rifling through old furniture, occasionally calling out to you about things he finds. You are in the study, boxing books, when the floor shifts beneath your weight \u2014 a soft groan of old timber \u2014 and then gives way entirely.\n\nNot a crash. Just a collapse. And then darkness."),
       N("You land hard on concrete in a room that has no right to exist. Small, dry, no windows. Dust everywhere. And on the floor, half-buried in grit: a ring. Not decorative \u2014 functional, dense, covered in tiny markings you don't recognise. The metal is dark and unusually warm. It hums at a frequency you feel in your back teeth.\n\nThe surface shifts between warm and cold in patches, like it's breathing."),
@@ -278,7 +279,7 @@ const GAME = {
       I("She studies you. Then she lets it go, the way a person does when the explanation would take longer than she has energy for."),
       D("Zara", "You want to know what actually happened?"),
       D("You", "Yeah."),
-      D("Zara", "That same day I saw you, an earthquake struck the whole of Nairobi. \u2014 It was devastating. Many people I knew lost their lives. \u2014 Qoogle swept in with their new disaster relief branch, the Red Qross."),
+      D("Zara", "That same day I saw you, an earthquake struck the whole of Nairobi. It was devastating. Many people I knew lost their lives. Qoogle swept in with their new disaster relief branch, the Red Qross."),
       D("Zara", "My neighbour, Mrs Otieno, she was 73. Had a chip \u2014 got it in the first government wave, was a good citizen, did everything right. But her data was lacking. Health signals not fully logged. Location patterns sparse. Economic activity minimal because she was retired."),
       D("Zara", "To Qoogle's algorithm, she was a low-confidence profile. The system couldn't categorise her well \u2014 not enough data to build a clear picture of where she was or how she was doing. Low-confidence profiles get deprioritised. The system goes to the people it knows better first."),
       D("Zara", "Red Qross still came to her building. But they skipped her unit until the fourth day. She was alive when they found her."),

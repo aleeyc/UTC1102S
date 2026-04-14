@@ -176,7 +176,7 @@ const GAME = {
   choice2: {
     img: "act2_arrival",
     chunks: [
-      N("A holographic news kiosk stands a few metres ahead \u2014 running a continuous relief briefing. Standing beside it: ARIA-3, designated civil information officer. She wears a pale blue uniform \u2014 Nairobi Public Information Service \u2014 pressed without a crease.\n\nAcross the plaza, Zara leans against a wall, arms crossed, watching the Red Qross teams with an expression of disdain you recognise even from a distance."),
+      N("A holographic news kiosk stands a few metres ahead \u2014 running a continuous relief briefing. Standing beside it: ARIA-3, designated civil information officer. She wears a pale blue uniform \u2014 Nairobi Public Information Service \u2014 pressed without a crease.\n\nAcross the plaza, Zara leans against a wall, arms crossed, watching the disaster relief teams with an expression of disdain you recognise even from a distance."),
     ],
     choices: [
       { label: "Approach ARIA-3 at the kiosk.", next: "path2a" },
